@@ -1,0 +1,18 @@
+.player {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.playercard {
+  z-index: 5;
+  width: 10%;
+  border: solid 3px black;
+  position: absolute;
+}
+.playercard span {
+  display: block;
+  margin: auto;
+  background-color: #a91a1a00;
+  border: black solid 3px;
+  text-overflow: ellipsis;
+}

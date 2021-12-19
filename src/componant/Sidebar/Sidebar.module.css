@@ -1,0 +1,5 @@
+.tableWrapper {
+  max-height: 100%;
+  overflow: auto;
+  display: inline-block;
+}

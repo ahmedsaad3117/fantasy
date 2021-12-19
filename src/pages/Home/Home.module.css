@@ -1,0 +1,16 @@
+.bigContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: .5rem;
+}
+.playgroundPlayers {
+   
+ 
+  border: black 3px solid;
+}
+.sidebarStyle {
+ width: 20em;
+  height: 800px;
+  border: black 3px solid;
+}
