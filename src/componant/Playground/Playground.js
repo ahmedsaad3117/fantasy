@@ -13,7 +13,7 @@ const Playground = () => {
       <div>
         {playersInfo && playersInfo.slice(0,11).map((val, key) => {
           return (
-            <Draggable key={key}>
+            <Draggable defaultPosition={{x: -350, y: 250}} key={key}>
               <div>
                 <CardPlayer name={val.name} />
               </div>
