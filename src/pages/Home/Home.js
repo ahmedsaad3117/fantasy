@@ -51,11 +51,12 @@ const isShowHandler=()=>{
             <img src={logo} />
           </div>
 
+       
+
+          <div className={styles.playgroundContinerHome} ref={ref}>
           <div className={styles.matchTitle}>
             <h3> {matceName.name} </h3>
           </div>
-
-          <div ref={ref}>
             <Playground />
 
             <div dir="ltr" className={styles.ourSocial}>
@@ -85,7 +86,7 @@ const isShowHandler=()=>{
           <div dir="ltr" className={styles.buttonsContainer}>
             <div className={styles.socialShare}>
               <ShareSocial
-                url="https://www.buildlineup.com"
+                url="https://fantasysu.herokuapp.com"
                 socialTypes={["facebook", "twitter", "reddit", "linkedin"]}
               />
             </div>

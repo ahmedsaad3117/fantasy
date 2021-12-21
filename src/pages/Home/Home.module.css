@@ -1,3 +1,4 @@
+
 .bigContainer {
   display: flex;
   flex-direction: row-reverse;
@@ -7,7 +8,6 @@
 
 .sidebarStyle {
   width: 20em;
-  height: 800px;
 }
 
 .buttonsContainer {
@@ -72,8 +72,11 @@
 .hiddenSideBar{
   position: absolute;
   width: 100%;
-  z-index: 5;
+  z-index: 99;
   background-color: #fff ;
 }
-.toggleBtn{
+.toggleBtn:hover{
+  background-color: rgb(87, 53, 49)  ;
+}
+.playgroundContinerHome{
 }

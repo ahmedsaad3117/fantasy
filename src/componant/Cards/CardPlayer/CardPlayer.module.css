@@ -1,12 +1,12 @@
 .player {
-  width: 60%;
-  height: 60%;
+  width: 50%;
+  height: 50%;
 }
 .playercard {
-  z-index: 5;
-  width: 13%;
-  position: fixed;
+  z-index: 15;
+  width: 130%;
   text-align: center;
+
 }
 .playercard span {
   font-size: 100%;

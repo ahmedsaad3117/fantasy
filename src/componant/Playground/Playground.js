@@ -10,18 +10,23 @@ const Playground = () => {
 
   return ( 
     <>
-      <div>
+    <div className={styles.playgroundBigContiner}>
+      
         {playersInfo && playersInfo.slice(0,11).map((val, key) => {
           return (
-            <Draggable defaultPosition={{x: -350, y: 250}} key={key}>
-              <div>
+            <Draggable key={key}>
+              <div className={styles.playerCardPlayGround}>
                 <CardPlayer name={val.name} />
               </div>
             </Draggable>
           );
         })}
 
-        <img className={styles.playground} alt="Player" src={playground} />
+        
+    
+      <div className={styles.playgroundContiner} >
+      <img className={styles.playground} alt="Player" src={playground} />
+      </div>
       </div>
     </>
   );

@@ -6,7 +6,7 @@ const CardPlayer = (props) => {
     <>
       <div className={styles.playercard}>
         <img alt="Player" className={styles.player} src={player} />
-        <span>{props.name}</span>
+        <div className={styles.spanContianer}><span>{props.name}</span></div>
       </div>
     </>
   );

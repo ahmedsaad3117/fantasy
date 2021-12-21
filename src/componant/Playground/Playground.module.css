@@ -1,5 +1,24 @@
 .playground {
   z-index: -1;
-  position: relative;
+  position:static;
   width: 100%;
+
+}
+.playgroundContiner{
+  z-index: -1;
+ width: fit-content;
+
+
+}
+.playgroundBigContiner{
+  position: relative;
+
+}
+
+.playerCardPlayGround{
+  position: absolute;
+  z-index: 15;
+  width: 15%;
+
+
 }
