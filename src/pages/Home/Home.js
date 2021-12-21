@@ -62,15 +62,15 @@ const isShowHandler=()=>{
             <div dir="ltr" className={styles.ourSocial}>
               <div>
                 <BsFacebook className={styles.iconSochiel} />
-                <span> M1/2</span>
+                <span className={styles.spanIconNamr}> M1/2</span>
               </div>
               <div>
                 <BsTwitter className={styles.iconSochiel} />
-                <span> M1/2</span>
+                <span className={styles.spanIconNamr}> M1/2</span>
               </div>
               <div>
                 <FaTiktok className={styles.iconSochiel} />
-                <span> M1/2</span>
+                <span className={styles.spanIconNamr}> M1/2</span>
               </div>
             </div>
           </div>
