@@ -11,6 +11,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 
+import '../node_modules/@fortawesome/fontawesome-svg-core/styles.css'
+
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

@@ -1,13 +1,12 @@
 .player {
-  width: 65%;
-  height: 65%;
+  width: 60%;
+  height: 60%;
 }
 .playercard {
   z-index: 5;
   width: 13%;
   position: fixed;
   text-align: center;
-
 }
 .playercard span {
   font-size: 100%;
@@ -16,3 +15,4 @@
   background-color: #a91a1a00;
   text-overflow: ellipsis;
 }
+
