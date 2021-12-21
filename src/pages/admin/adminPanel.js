@@ -7,8 +7,12 @@ import styles from './adminPanel.module.css'
 const AdminPanel =()=>{
 
     const playersInfo = useSelector((state) => state.data);
+     const dispatch =  useDispatch();
+     
+     const deletPlayerHandeler =()=>{
+         dispatch({type:'removePlayer' , value: "1"})
+     } 
 
-    console.log(playersInfo)
     return(
         <div className={styles.tableWrapper}>
         <Table responsive>
@@ -39,6 +43,7 @@ const AdminPanel =()=>{
               })}
           </tbody>
         </Table>
+        <button onClick={deletPlayerHandeler}> delete</button>
       </div>
     );
 

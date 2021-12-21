@@ -29,6 +29,18 @@
   line-height: 1.5;
   color: #fff;
 }
+.buttonClassSmailSize {
+  background-color: #329f41;
+  border: none;
+  width: 50%;
+  height: fit-content;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.3rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+}
 .buttonClass:hover {
   background-color: #34723c;
 }
@@ -56,7 +68,7 @@
 }
 .socialShare {
   color: "white";
-  width: 70%;
+  width: 80%;
 }
 .ourSocial{
   width: 80%;

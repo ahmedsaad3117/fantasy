@@ -75,13 +75,20 @@ const isShowHandler=()=>{
             </div>
           </div>
           <div className={styles.buttonsContainer}>
-            <button
+          {   isTabletOrMobile && <button
+              className={styles.buttonClassSmailSize}
+              onClick={downloadScreenshot}
+              size="lg"
+            >
+              تنزيل الصورة
+            </button>}
+          {   !isTabletOrMobile && <button
               className={styles.buttonClass}
               onClick={downloadScreenshot}
               size="lg"
             >
               تنزيل الصورة
-            </button>
+            </button>}
           </div>
           <div dir="ltr" className={styles.buttonsContainer}>
             <div className={styles.socialShare}>

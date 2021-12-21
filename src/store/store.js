@@ -23,6 +23,17 @@ const playerReducer = ( state = {data :intinalState , selctedPlayer : [] , match
             selctedPlayer : [...state.selctedPlayer.filter(x => x.number !== player) ]
         }
     }
+    if(action.type === "removePlayer"){ 
+           
+        let deltedData = [...intinalState.filter(x=>x.number !== player )]
+        console.log(deltedData) 
+        return {
+            data : [...intinalState.filter(x=>x.number !== player )],
+            matcheName : matchNameFile,
+            selctedPlayer : [...state.selctedPlayer.filter(x => x.number !== player) ]
+        }
+        
+    }
     return state
     
     
