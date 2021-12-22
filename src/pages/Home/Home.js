@@ -58,15 +58,15 @@ const Home = () => {
             <Playground />
 
             <div dir="ltr" className={styles.ourSocial}>
-              <div>
+              <div className={styles.divContiner}>
                 <BsInstagram className={styles.iconSochiel} />
                 <span className={styles.spanIconNamr}> /halfmillion_sa</span>
               </div>
-              <div>
+              <div className={styles.divContiner}>
                 <BsTwitter className={styles.iconSochiel} />
                 <span className={styles.spanIconNamr}> /halfmillion_sa</span>
               </div>
-              <div>
+              <div className={styles.divContiner}>
                 <BsLinkedin className={styles.iconSochiel} />
                 <span className={styles.spanIconNamr}> /halfmillion</span>
               </div>
@@ -108,12 +108,12 @@ const Home = () => {
         )}
         {isTabletOrMobile && (
           <div className={styles.sidebarStyleMin}>
-            <GoThreeBars onClick={isShowHandler} />
+            <GoThreeBars className={styles.toggleBtn} onClick={isShowHandler} />
             {isShow && (
               <div className={styles.hiddenSideBar}>
                 {" "}
                 <h1>
-                  <Sidebar className={styles.toggleBtn} />
+                  <Sidebar  />
                 </h1>
               </div>
             )}

@@ -71,23 +71,30 @@
 .ourSocial {
   width: 80%;
   margin: auto;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: flex;
-  justify-content: space-around;
+  justify-content:center;
   font-weight: bold;
 }
 .iconSochiel:hover {
   color: #3a2b23;
 }
+.spanIconNamr {
+  font-size: 12px;
+}
+
 .hiddenSideBar {
   position: absolute;
   width: 100%;
   z-index: 99;
   background-color: #fff;
 }
-.toggleBtn:hover {
-  background-color: rgb(87, 53, 49);
+.toggleBtn{
+  font-size: 30px;
 }
-.spanIconNamr {
-  font-size: 14px;
+.toggleBtn:hover {
+  background-color: rgba(208, 185, 185 , .7);
+}
+.divContiner{
+  margin: 0 5px;
 }
