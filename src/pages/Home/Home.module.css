@@ -18,7 +18,7 @@
   align-items: flex-end;
 }
 .buttonClass {
-  background-color: #329f41;
+  background-color: #261409;
   border: none;
   width: 25%;
   height: fit-content;
@@ -30,7 +30,7 @@
   color: #fff;
 }
 .buttonClassSmailSize {
-  background-color: #329f41;
+  background-color: #261409;
   border: none;
   width: 50%;
   height: fit-content;
@@ -42,7 +42,7 @@
   color: #fff;
 }
 .buttonClass:hover {
-  background-color: #34723c;
+  background-color: #3a2b23;
 }
 .sideBanner {
   width: 15%;
@@ -79,7 +79,7 @@
   font-weight: bold;
 }
 .iconSochiel:hover{
-  color: blue;
+  color: #3a2b23;
 }
 .hiddenSideBar{
   position: absolute;

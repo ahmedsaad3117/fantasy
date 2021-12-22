@@ -4,11 +4,12 @@ import {
   NavDropdown,
   Container,
 } from "react-bootstrap";
+import styles from './Navbar.module.css'
 
 const NavbarComp = () => {
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar className={styles.navbarClass}>
         <Container>
           <Navbar.Brand href="#home">فريق الشباب</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

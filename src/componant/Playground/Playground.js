@@ -8,25 +8,23 @@ import { useSelector } from "react-redux";
 const Playground = () => {
   const playersInfo = useSelector((state) => state.selctedPlayer);
 
-  return ( 
+  return (
     <>
-    <div className={styles.playgroundBigContiner}>
-      
-        {playersInfo && playersInfo.slice(0,11).map((val, key) => {
-          return (
-            <Draggable key={key}>
-              <div className={styles.playerCardPlayGround}>
-                <CardPlayer name={val.name} />
-              </div>
-            </Draggable>
-          );
-        })}
+      <div className={styles.playgroundBigContiner}>
+        {playersInfo &&
+          playersInfo.slice(0, 11).map((val, key) => {
+            return (
+              <Draggable key={key}>
+                <div className={styles.playerCardPlayGround}>
+                  <CardPlayer name={val.name} />
+                </div>
+              </Draggable>
+            );
+          })}
 
-        
-    
-      <div className={styles.playgroundContiner} >
-      <img className={styles.playground} alt="Player" src={playground} />
-      </div>
+        <div className={styles.playgroundContiner}>
+          <img className={styles.playground} alt="Player" src={playground} />
+        </div>
       </div>
     </>
   );

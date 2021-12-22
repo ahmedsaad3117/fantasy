@@ -1,24 +1,20 @@
 .playground {
   z-index: -1;
-  position:static;
+  position: static;
   width: 100%;
-
 }
-.playgroundContiner{
+.playgroundContiner {
   z-index: -1;
- width: fit-content;
-
-
+  width: fit-content;
 }
-.playgroundBigContiner{
+.playgroundBigContiner {
+  display: flex;
+  justify-content: space-between;
   position: relative;
-
 }
 
-.playerCardPlayGround{
+.playerCardPlayGround {
   position: absolute;
   z-index: 15;
   width: 15%;
-
-
 }

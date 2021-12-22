@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import { useScreenshot, createFileName } from "use-react-screenshot";
 import { createRef, useState } from "react";
 import { ShareSocial } from "react-share-social";
-import { BsFacebook, BsTwitter } from "react-icons/bs";
+import { BsInstagram, BsTwitter, BsLinkedin } from "react-icons/bs";
 import { GoThreeBars } from "react-icons/go";
 import { FaTiktok } from "react-icons/fa";
 import { useMediaQuery } from "react-responsive";
@@ -61,16 +61,16 @@ const isShowHandler=()=>{
 
             <div dir="ltr" className={styles.ourSocial}>
               <div>
-                <BsFacebook className={styles.iconSochiel} />
-                <span className={styles.spanIconNamr}> M1/2</span>
+                <BsInstagram className={styles.iconSochiel} />
+                <span className={styles.spanIconNamr}> /halfmillion_sa</span>
               </div>
               <div>
                 <BsTwitter className={styles.iconSochiel} />
-                <span className={styles.spanIconNamr}> M1/2</span>
+                <span className={styles.spanIconNamr}> /halfmillion_sa</span>
               </div>
               <div>
-                <FaTiktok className={styles.iconSochiel} />
-                <span className={styles.spanIconNamr}> M1/2</span>
+                <BsLinkedin className={styles.iconSochiel} />
+                <span className={styles.spanIconNamr}> /halfmillion</span>
               </div>
             </div>
           </div>

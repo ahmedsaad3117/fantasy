@@ -25,8 +25,9 @@ const playerReducer = ( state = {data :intinalState , selctedPlayer : [] , match
     }
     if(action.type === "removePlayer"){ 
            
-        let deltedData = [...intinalState.filter(x=>x.number !== player )]
-        console.log(deltedData) 
+        let deltedData = [...intinalState.filter(x=>x.number === player )]
+        delete intinalState[1];
+        console.log(intinalState[1]) 
         return {
             data : [...intinalState.filter(x=>x.number !== player )],
             matcheName : matchNameFile,
