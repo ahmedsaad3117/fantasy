@@ -4,6 +4,7 @@ import CardPlayer from "../Cards/CardPlayer/CardPlayer";
 
 import Draggable from "react-draggable"; // The default
 import { useSelector } from "react-redux";
+import { useState } from "react";
 
 const Playground = () => {
   const playersInfo = useSelector((state) => state.selctedPlayer);
@@ -14,7 +15,7 @@ const Playground = () => {
         {playersInfo &&
           playersInfo.slice(0, 11).map((val, key) => {
             return (
-              <Draggable key={key}>
+              <Draggable bounds key={key} defaultPosition={{ x: -200, y: 100 }}>
                 <div className={styles.playerCardPlayGround}>
                   <CardPlayer name={val.name} />
                 </div>
