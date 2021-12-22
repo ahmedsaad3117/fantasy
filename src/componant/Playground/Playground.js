@@ -12,17 +12,22 @@ const Playground = () => {
   return (
     <>
       <div className={styles.playgroundBigContiner}>
-        {playersInfo &&
-          playersInfo.slice(0, 11).map((val, key) => {
-            return (
-              <Draggable bounds key={key} defaultPosition={{ x: -200, y: 100 }}>
-                <div className={styles.playerCardPlayGround}>
-                  <CardPlayer name={val.name} />
-                </div>
-              </Draggable>
-            );
-          })}
-
+        <div className={styles.cardHolders}>
+          {playersInfo &&
+            playersInfo.slice(0, 11).map((val, key) => {
+              return (
+                <Draggable
+                  bounds
+                  key={key}
+                  defaultPosition={{ x: -70, y: 100 }}
+                >
+                  <div className={styles.playerCardPlayGround}>
+                    <CardPlayer name={val.name} />
+                  </div>
+                </Draggable>
+              );
+            })}
+        </div>
         <div className={styles.playgroundContiner}>
           <img className={styles.playground} alt="Player" src={playground} />
         </div>

@@ -2,22 +2,28 @@
   z-index: -1;
   position: static;
   width: 100%;
-
 }
 .playgroundContiner {
   z-index: -1;
   width: fit-content;
-
 }
 .playgroundBigContiner {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   position: relative;
 }
 
 .playerCardPlayGround {
-  position: absolute;
+  position: static;
+  margin: 6% 1.8%  ;
   z-index: 15;
   width: 15%;
-
+}
+.cardHolders {
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

@@ -21,7 +21,7 @@ const Home = () => {
   const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
   const isRetina = useMediaQuery({ query: "(min-resolution: 2dppx)" });
 
-   const [isShow , setIsShow] =useState(false)
+  const [isShow, setIsShow] = useState(false);
 
   const ref = createRef(null);
   const [image, takeScreenShot] = useScreenshot({
@@ -39,9 +39,9 @@ const Home = () => {
   const downloadScreenshot = () => takeScreenShot(ref.current).then(download);
 
   const matceName = useSelector((state) => state.matcheName);
-const isShowHandler=()=>{
-  setIsShow(!isShow)
-}
+  const isShowHandler = () => {
+    setIsShow(!isShow);
+  };
   return (
     <>
       <div className={styles.bigContainer}>
@@ -51,12 +51,10 @@ const isShowHandler=()=>{
             <img src={logo} />
           </div>
 
-       
-
           <div className={styles.playgroundContinerHome} ref={ref}>
-          <div className={styles.matchTitle}>
-            <h3> {matceName.name} </h3>
-          </div>
+            <div className={styles.matchTitle}>
+              <h3> {matceName.name} </h3>
+            </div>
             <Playground />
 
             <div dir="ltr" className={styles.ourSocial}>
@@ -75,20 +73,24 @@ const isShowHandler=()=>{
             </div>
           </div>
           <div className={styles.buttonsContainer}>
-          {   isTabletOrMobile && <button
-              className={styles.buttonClassSmailSize}
-              onClick={downloadScreenshot}
-              size="lg"
-            >
-              تنزيل الصورة
-            </button>}
-          {   !isTabletOrMobile && <button
-              className={styles.buttonClass}
-              onClick={downloadScreenshot}
-              size="lg"
-            >
-              تنزيل الصورة
-            </button>}
+            {isTabletOrMobile && (
+              <button
+                className={styles.buttonClassSmailSize}
+                onClick={downloadScreenshot}
+                size="lg"
+              >
+                تنزيل الصورة
+              </button>
+            )}
+            {!isTabletOrMobile && (
+              <button
+                className={styles.buttonClass}
+                onClick={downloadScreenshot}
+                size="lg"
+              >
+                تنزيل الصورة
+              </button>
+            )}
           </div>
           <div dir="ltr" className={styles.buttonsContainer}>
             <div className={styles.socialShare}>
@@ -106,8 +108,15 @@ const isShowHandler=()=>{
         )}
         {isTabletOrMobile && (
           <div className={styles.sidebarStyleMin}>
-              <GoThreeBars onClick={isShowHandler}/>
-            { isShow && <div className={styles.hiddenSideBar}> <h1><Sidebar className={styles.toggleBtn}  /></h1></div>}
+            <GoThreeBars onClick={isShowHandler} />
+            {isShow && (
+              <div className={styles.hiddenSideBar}>
+                {" "}
+                <h1>
+                  <Sidebar className={styles.toggleBtn} />
+                </h1>
+              </div>
+            )}
           </div>
         )}
       </div>
