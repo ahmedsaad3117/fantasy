@@ -4,7 +4,6 @@ import CardPlayer from "../Cards/CardPlayer/CardPlayer";
 
 import Draggable from "react-draggable"; // The default
 import { useSelector } from "react-redux";
-import { useState } from "react";
 
 const Playground = () => {
   const playersInfo = useSelector((state) => state.selctedPlayer);

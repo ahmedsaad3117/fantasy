@@ -1,7 +1,6 @@
 import styles from "./Home.module.css";
 import Playground from "../../componant/Playground/Playground";
 import Sidebar from "../../componant/Sidebar/Sidebar";
-import logo from "../../assets/images/HalfMillionLogo.png";
 
 import { useSelector } from "react-redux";
 import { useScreenshot, createFileName } from "use-react-screenshot";
@@ -9,17 +8,11 @@ import { createRef, useState } from "react";
 import { ShareSocial } from "react-share-social";
 import { BsInstagram, BsTwitter, BsLinkedin } from "react-icons/bs";
 import { GoThreeBars } from "react-icons/go";
-import { FaTiktok } from "react-icons/fa";
 import { useMediaQuery } from "react-responsive";
 
 const Home = () => {
-  const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width: 1224px)",
-  });
-  const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
+
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
-  const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
-  const isRetina = useMediaQuery({ query: "(min-resolution: 2dppx)" });
 
   const [isShow, setIsShow] = useState(false);
 
