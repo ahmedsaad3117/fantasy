@@ -46,14 +46,12 @@ const Home = () => {
     <>
       <div className={styles.bigContainer}>
         <div className={styles.playgroundPlayers}>
-          <div className={styles.mainBanner}>
-            {" "}
-            <img src={logo} />
-          </div>
+    
 
           <div className={styles.playgroundContinerHome} ref={ref}>
             <div className={styles.matchTitle}>
               <h3> {matceName.name} </h3>
+              <h6> 24 ديسمبر </h6>
             </div>
             <Playground />
 
