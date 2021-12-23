@@ -1,5 +1,4 @@
-*{
-  
+* {
 }
 .bigContainer {
   display: flex;
@@ -7,7 +6,6 @@
   justify-content: center;
   padding: 0.5rem;
 }
-
 
 .sidebarStyle {
   width: 22em;
@@ -19,10 +17,14 @@
   margin-bottom: 1em;
   margin-top: 1em;
   align-items: flex-end;
-  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .buttonClass {
-  background: radial-gradient(circle, rgba(50,146,65,1) 32%, rgba(106,189,59,1) 93%);
+  background: radial-gradient(
+    circle,
+    rgba(50, 146, 65, 1) 32%,
+    rgba(106, 189, 59, 1) 93%
+  );
   border: none;
   width: 25%;
   height: fit-content;
@@ -32,10 +34,14 @@
   font-weight: 400;
   line-height: 1.5;
   color: #fff;
-  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .buttonClassSmailSize {
-  background: radial-gradient(circle, rgba(50,146,65,1) 32%, rgba(106,189,59,1) 93%);
+  background: radial-gradient(
+    circle,
+    rgba(50, 146, 65, 1) 32%,
+    rgba(106, 189, 59, 1) 93%
+  );
   border: none;
   width: 50%;
   height: fit-content;
@@ -45,11 +51,10 @@
   font-weight: 400;
   line-height: 1.5;
   color: #fff;
-  font-family: 'Noto Kufi Arabic', sans-serif;
-  
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .buttonClass:hover {
-  background: rgba(50,146,65,1);
+  background: rgba(50, 146, 65, 1);
 }
 
 .matchTitle {
@@ -61,8 +66,8 @@
   padding: 30px;
   border-radius: 10px;
   color: #fff;
-  background: url(./../../assets/images/match_title.jpg) #000 no-repeat center ;
-  font-family: 'Noto Kufi Arabic', sans-serif;
+  background: url(./../../assets/images/match_title.jpg) #000 no-repeat center;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .mainBanner {
   width: 90%;
@@ -80,14 +85,13 @@
   width: 80%;
   margin: auto;
   overflow-x: hidden;
-
 }
 .ourSocial {
   font-size: 1rem;
   display: flex;
   justify-content: center;
   font-weight: bold;
-  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 .iconSochiel:hover {
   color: #3a2b23;
@@ -114,16 +118,19 @@
 .divContiner {
   margin: 0 5px;
 }
-.movingAlert{
+.movingAlert {
   text-align: center;
 }
-.socialInfoContiner{
+.socialInfoContiner {
   display: flex;
   justify-content: space-around;
-  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  padding-bottom: 15px;
 }
-.socialInfoContinerMobile{
+.socialInfoContinerMobile {
   display: flex;
   flex-direction: column;
-  font-family: 'Noto Kufi Arabic', sans-serif;
-}
+  font-family: "Noto Kufi Arabic", sans-serif;
+  padding-bottom: 15px;
+
+  }

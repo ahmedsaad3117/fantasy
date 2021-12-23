@@ -7,8 +7,6 @@
   width: 130%;
   max-height: fit-content;
   text-align: center;
-
-
 }
 .playercard span {
   font-size: 80%;
@@ -20,8 +18,5 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  max-width:90%
-  
-
+  max-width: 90%;
 }
-
