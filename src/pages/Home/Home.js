@@ -6,12 +6,16 @@ import { useSelector } from "react-redux";
 import { useScreenshot, createFileName } from "use-react-screenshot";
 import { createRef, useState } from "react";
 import { ShareSocial } from "react-share-social";
-import { BsInstagram, BsTwitter, BsLinkedin } from "react-icons/bs";
+import {
+  BsInstagram,
+  BsTwitter,
+  BsLinkedin,
+  BsFillInfoCircleFill,
+} from "react-icons/bs";
 import { GoThreeBars } from "react-icons/go";
 import { useMediaQuery } from "react-responsive";
 
 const Home = () => {
-
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   const [isShow, setIsShow] = useState(false);
@@ -39,27 +43,34 @@ const Home = () => {
     <>
       <div className={styles.bigContainer}>
         <div className={styles.playgroundPlayers}>
-    
-
           <div className={styles.playgroundContinerHome} ref={ref}>
             <div className={styles.matchTitle}>
               <h3> {matceName.name} </h3>
               <h6> 24 ديسمبر </h6>
             </div>
-            <Playground />
 
-            <div dir="ltr" className={styles.ourSocial}>
-              <div className={styles.divContiner}>
-                <BsInstagram className={styles.iconSochiel} />
-                <span className={styles.spanIconNamr}> /halfmillion_sa</span>
+            <Playground />
+            <div className={styles.socialInfoContiner}>
+              <div className={styles.movingAlert}>
+                <span>
+                  {" "}
+                  <BsFillInfoCircleFill /> قم بسحب وإسقاط اللاعبين لتغيير
+                  مواقعهم{" "}
+                </span>
               </div>
-              <div className={styles.divContiner}>
-                <BsTwitter className={styles.iconSochiel} />
-                <span className={styles.spanIconNamr}> /halfmillion_sa</span>
-              </div>
-              <div className={styles.divContiner}>
-                <BsLinkedin className={styles.iconSochiel} />
-                <span className={styles.spanIconNamr}> /halfmillion</span>
+              <div dir="ltr" className={styles.ourSocial}>
+                <div className={styles.divContiner}>
+                  <BsInstagram className={styles.iconSochiel} />
+                  <span className={styles.spanIconNamr}> /halfmillion_sa</span>
+                </div>
+                <div className={styles.divContiner}>
+                  <BsTwitter className={styles.iconSochiel} />
+                  <span className={styles.spanIconNamr}> /halfmillion_sa</span>
+                </div>
+                <div className={styles.divContiner}>
+                  <BsLinkedin className={styles.iconSochiel} />
+                  <span className={styles.spanIconNamr}> /halfmillion</span>
+                </div>
               </div>
             </div>
           </div>
@@ -104,7 +115,7 @@ const Home = () => {
               <div className={styles.hiddenSideBar}>
                 {" "}
                 <h1>
-                  <Sidebar  />
+                  <Sidebar />
                 </h1>
               </div>
             )}

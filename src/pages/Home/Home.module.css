@@ -74,8 +74,6 @@
   width: 80%;
 }
 .ourSocial {
-  width: 80%;
-  margin: auto;
   font-size: 1rem;
   display: flex;
   justify-content: center;
@@ -102,4 +100,11 @@
 }
 .divContiner {
   margin: 0 5px;
+}
+.movingAlert{
+  text-align: center;
+}
+.socialInfoContiner{
+  display: flex;
+  justify-content: space-around;
 }
