@@ -1,3 +1,6 @@
+*{
+  font-family: 'Noto Kufi Arabic', sans-serif;
+}
 .bigContainer {
   display: flex;
   flex-direction: row-reverse;
