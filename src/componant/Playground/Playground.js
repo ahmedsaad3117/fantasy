@@ -18,7 +18,7 @@ const Playground = () => {
                 <Draggable
                   bounds
                   key={key}
-                  defaultPosition={{ x: -70, y: 30 }}
+                  defaultPosition={{ x: 18, y: 30 }}
                 >
                   <div className={styles.playerCardPlayGround}>
                     <CardPlayer name={val.name} />
