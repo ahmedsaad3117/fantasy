@@ -80,7 +80,7 @@ const Home = () => {
                   <span className={styles.spanIconNamr}> /halfmillion_sa</span>
                 </div>
                 <div className={styles.divContiner}>
-                  <a href="https://twitter.com/halfmillion_sa">
+                  <a href="https://www.tiktok.com/@halfmillion_sa">
                     <FaTiktok className={styles.iconSochiel} />
                   </a>
                   <span className={styles.spanIconNamr}> /halfmillion</span>
