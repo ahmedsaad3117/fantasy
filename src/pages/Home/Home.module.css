@@ -104,6 +104,9 @@
 }
 .toggleBtn {
   font-size: 30px;
+  position: absolute;
+  z-index: 110;
+  top: 40px;
 }
 .toggleBtn:hover {
   background-color: rgba(208, 185, 185, 0.7);
@@ -117,5 +120,10 @@
 .socialInfoContiner{
   display: flex;
   justify-content: space-around;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+}
+.socialInfoContinerMobile{
+  display: flex;
+  flex-direction: column;
   font-family: 'Noto Kufi Arabic', sans-serif;
 }

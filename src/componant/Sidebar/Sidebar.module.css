@@ -1,7 +1,9 @@
 .tableWrapper {
+  width: 95%;
   max-height: 100%;
-  overflow: auto;
+  overflow-y: hidden;
   display: inline-block;
   font-family: 'Noto Kufi Arabic', sans-serif;
+  font-size: 75%;
   
 }

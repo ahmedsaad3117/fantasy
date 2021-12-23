@@ -36,12 +36,12 @@ const Sidebar = () => {
   return (
     <>
       <div className={styles.tableWrapper}>
-        <Table responsive>
+        <Table size="sm" responsive>
           <thead>
             <tr>
               <th>الرقم</th>
               <th>الاسم</th>
-              <th>المركز</th>
+              <th>المركز</th> 
               <th>اساسي</th>
             </tr>
           </thead>

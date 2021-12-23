@@ -51,7 +51,7 @@ const Home = () => {
             </div>
 
             <Playground />
-            <div className={styles.socialInfoContiner}>
+            <div className={isTabletOrMobile?styles.socialInfoContinerMobile: styles.socialInfoContiner}>
               <div className={styles.movingAlert}>
                 <span>
                   {" "}
