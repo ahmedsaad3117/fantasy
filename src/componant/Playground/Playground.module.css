@@ -18,11 +18,11 @@
   position: static;
   margin: 3% 1.8%  ;
   z-index: 15;
-  width: 15%;
+  width: 20%;
 
 }
 .cardHolders {
-  width: 65%;
+  width: 70%;
   margin: auto;
   position: absolute;
   display: flex;

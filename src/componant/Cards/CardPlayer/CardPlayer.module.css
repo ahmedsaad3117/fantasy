@@ -5,14 +5,23 @@
 .playercard {
   z-index: 15;
   width: 130%;
+  max-height: fit-content;
   text-align: center;
+
 
 }
 .playercard span {
-  font-size: 100%;
-  display: block;
+  font-size: 80%;
   margin: auto;
   background-color: #a91a1a00;
   text-overflow: ellipsis;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width:90%
+  
+
 }
 
