@@ -12,9 +12,10 @@ import {
   BsLinkedin,
   BsFillInfoCircleFill,
 } from "react-icons/bs";
-import { GoThreeBars } from "react-icons/go";
-import { useMediaQuery } from "react-responsive";
 
+import { GoThreeBars } from "react-icons/go";
+import { FaTiktok } from "react-icons/fa";
+import { useMediaQuery } from "react-responsive";
 
 const Home = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
@@ -51,7 +52,13 @@ const Home = () => {
             </div>
 
             <Playground />
-            <div className={isTabletOrMobile?styles.socialInfoContinerMobile: styles.socialInfoContiner}>
+            <div
+              className={
+                isTabletOrMobile
+                  ? styles.socialInfoContinerMobile
+                  : styles.socialInfoContiner
+              }
+            >
               <div className={styles.movingAlert}>
                 <span>
                   {" "}
@@ -61,46 +68,32 @@ const Home = () => {
               </div>
               <div dir="ltr" className={styles.ourSocial}>
                 <div className={styles.divContiner}>
-                  <BsInstagram className={styles.iconSochiel} />
+                  <a href="https://www.instagram.com/halfmillion_sa">
+                    <BsInstagram className={styles.iconSochiel} />
+                  </a>
                   <span className={styles.spanIconNamr}> /halfmillion_sa</span>
                 </div>
                 <div className={styles.divContiner}>
-                  <BsTwitter className={styles.iconSochiel} />
+                  <a href="https://twitter.com/halfmillion_sa">
+                    <BsTwitter className={styles.iconSochiel} />
+                  </a>
                   <span className={styles.spanIconNamr}> /halfmillion_sa</span>
                 </div>
                 <div className={styles.divContiner}>
-                  <BsLinkedin className={styles.iconSochiel} />
+                  <a href="https://twitter.com/halfmillion_sa">
+                    <FaTiktok className={styles.iconSochiel} />
+                  </a>
                   <span className={styles.spanIconNamr}> /halfmillion</span>
                 </div>
               </div>
             </div>
           </div>
-          <div className={styles.buttonsContainer}>
-            {isTabletOrMobile && (
-              <button
-                className={styles.buttonClassSmailSize}
-                onClick={downloadScreenshot}
-                size="lg"
-              >
-                تنزيل الصورة
-              </button>
-            )}
-            {!isTabletOrMobile && (
-              <button
-                className={styles.buttonClass}
-                onClick={downloadScreenshot}
-                size="lg"
-              >
-                تنزيل الصورة
-              </button>
-            )}
-          </div>
+
           <div dir="ltr" className={styles.buttonsContainer}>
             <div className={styles.socialShare}>
               <ShareSocial
                 url="https://fantasysu.herokuapp.com"
                 socialTypes={["facebook", "twitter", "reddit", "linkedin"]}
-
               />
             </div>
           </div>
