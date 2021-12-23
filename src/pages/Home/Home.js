@@ -15,6 +15,7 @@ import {
 import { GoThreeBars } from "react-icons/go";
 import { useMediaQuery } from "react-responsive";
 
+
 const Home = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
@@ -99,6 +100,7 @@ const Home = () => {
               <ShareSocial
                 url="https://fantasysu.herokuapp.com"
                 socialTypes={["facebook", "twitter", "reddit", "linkedin"]}
+
               />
             </div>
           </div>
