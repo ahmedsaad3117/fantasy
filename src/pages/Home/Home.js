@@ -98,24 +98,23 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {!isTabletOrMobile && (
-          <div className={styles.sidebarStyle}>
+        
+          <div hidden={isTabletOrMobile} className={styles.sidebarStyle}>
             <Sidebar />
           </div>
-        )}
-        {isTabletOrMobile && (
-          <div className={styles.sidebarStyleMin}>
+        
+        
+          <div hidden={!isTabletOrMobile} className={styles.sidebarStyleMin}>
             <GoThreeBars className={styles.toggleBtn} onClick={isShowHandler} />
-            {isShow && (
-              <div className={styles.hiddenSideBar}>
-                {" "}
+            {
+              <div hidden={isShow} className={styles.hiddenSideBar}>
                 <h1>
                   <Sidebar />
                 </h1>
               </div>
-            )}
+            }
           </div>
-        )}
+        
       </div>
     </>
   );

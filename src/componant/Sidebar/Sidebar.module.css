@@ -3,7 +3,9 @@
   max-height: 100%;
   overflow-y: hidden;
   display: inline-block;
-  font-family: 'Noto Kufi Arabic', sans-serif;
-  font-size: 75%;
+  /* font-family: "Noto Kufi Arabic", sans-serif; */
+  font-family: 'Frutiger LT Arabic', sans-serif;
+                                                
+  font-size: 85;
   
 }

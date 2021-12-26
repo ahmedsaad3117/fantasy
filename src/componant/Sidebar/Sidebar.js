@@ -48,13 +48,15 @@ const Sidebar = () => {
           <tbody className={styles.tableSidebar}>
             {playersInfo &&
               playersInfo.map((info, key) => {
+                console.log(key)
                 return (
-                  <tr key={info.number}>
+                  <tr>
                     <td>{info.number}</td>
                     <td>{info.name}</td>
                     <td>{info.position}</td>
                     <td>
                       <input
+                     
                         onChange={(e) =>addPlayerToFieldHandeler(e, info.number)}
                         disabled={isComlateTeam && !playersSelcted.find(x=>x.number===info.number) }
                         type="checkbox"

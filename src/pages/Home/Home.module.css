@@ -17,7 +17,8 @@
   margin-bottom: 1em;
   margin-top: 1em;
   align-items: flex-end;
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'Frutiger LT Arabic', sans-serif;
+  /* font-family: "Noto Kufi Arabic", sans-serif; */
 }
 .buttonClass {
   background: radial-gradient(
@@ -34,7 +35,7 @@
   font-weight: 400;
   line-height: 1.5;
   color: #fff;
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'Frutiger LT Arabic', sans-serif;
 }
 .buttonClassSmailSize {
   background: radial-gradient(
@@ -51,7 +52,7 @@
   font-weight: 400;
   line-height: 1.5;
   color: #fff;
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'Frutiger LT Arabic', sans-serif;
 }
 .buttonClass:hover {
   background: rgba(50, 146, 65, 1);
@@ -67,7 +68,7 @@
   border-radius: 10px;
   color: #fff;
   background: url(./../../assets/images/playground1.jpg) #000 no-repeat bottom ;
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'Frutiger LT Arabic', sans-serif;
 }
 .mainBanner {
   width: 90%;
@@ -91,7 +92,7 @@
   display: flex;
   justify-content: center;
   font-weight: bold;
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'Frutiger LT Arabic', sans-serif;
 }
 .iconSochiel:hover {
   color: #3a2b23;
@@ -110,7 +111,9 @@
   font-size: 30px;
   position: absolute;
   z-index: 110;
-  top: 40px;
+  top: 45px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 .toggleBtn:hover {
   background-color: rgba(208, 185, 185, 0.7);
@@ -124,13 +127,13 @@
 .socialInfoContiner {
   display: flex;
   justify-content: space-around;
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'Frutiger LT Arabic', sans-serif;
   padding-bottom: 15px;
 }
 .socialInfoContinerMobile {
   display: flex;
   flex-direction: column;
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'Frutiger LT Arabic', sans-serif;
   padding-bottom: 15px;
 
   }
