@@ -13,7 +13,7 @@ const NavbarComp = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="https://halfm.sa/">موقعنا الرئيسي </Nav.Link>
+              <Navbar.Brand href="https://halfm.sa/"><span className={styles.navHeader}>M &#189; </span></Navbar.Brand>
             </Nav>
           </Navbar.Collapse>
         </Container>
