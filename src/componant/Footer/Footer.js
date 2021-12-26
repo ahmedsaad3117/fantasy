@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <>
       <footer className={styles.footerComp}>
-        <h5 className="text-center">© 2021 One M</h5>
+        <h5 className="text-center">© 2021 M &#189; </h5>
       </footer>
     </>
   );
