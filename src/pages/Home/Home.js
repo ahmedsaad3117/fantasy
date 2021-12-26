@@ -105,7 +105,11 @@ const Home = () => {
         
         
           <div hidden={!isTabletOrMobile} className={styles.sidebarStyleMin}>
-            <GoThreeBars className={styles.toggleBtn} onClick={isShowHandler} />
+            <div className={styles.toggleBtnDiv}>
+              
+            <GoThreeBars className={styles.toggleBtn}  onClick={isShowHandler} />
+            <span> قائمة اللاعبين</span>
+            </div>
             
               <div hidden={isShow} className={styles.hiddenSideBar}>
                 <h1>

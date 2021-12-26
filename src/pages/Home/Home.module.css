@@ -107,16 +107,25 @@
   z-index: 99;
   background-color: #fff;
 }
-.toggleBtn {
-  font-size: 30px;
+.toggleBtnDiv {
+  font-size: 20px;
   position: absolute;
   z-index: 110;
-  top: 45px;
-  background-color: #fff;
+  top: 13px;
   border-radius: 5px;
+  color: #fff;
+  font-family: 'Frutiger LT Arabic', sans-serif;
+
 }
 .toggleBtn:hover {
   background-color: rgba(208, 185, 185, 0.7);
+  border-radius: 5px;
+
+}
+.toggleBtn {
+  font-size: 30px;
+
+
 }
 .divContiner {
   margin: 0 5px;

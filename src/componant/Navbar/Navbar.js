@@ -10,7 +10,6 @@ const NavbarComp = () => {
     <>
       <Navbar variant="dark" className={styles.navbarClass}>
         <Container className={styles.navFonts}>
-          <Navbar.Brand href="#home">فريق الشباب</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
