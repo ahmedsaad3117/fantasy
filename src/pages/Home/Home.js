@@ -20,7 +20,7 @@ import { useMediaQuery } from "react-responsive";
 const Home = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
-  const [isShow, setIsShow] = useState(false);
+  const [isShow, setIsShow] = useState(true);
 
   const ref = createRef(null);
   const [image, takeScreenShot] = useScreenshot({
@@ -106,13 +106,13 @@ const Home = () => {
         
           <div hidden={!isTabletOrMobile} className={styles.sidebarStyleMin}>
             <GoThreeBars className={styles.toggleBtn} onClick={isShowHandler} />
-            {
+            
               <div hidden={isShow} className={styles.hiddenSideBar}>
                 <h1>
                   <Sidebar />
                 </h1>
               </div>
-            }
+            
           </div>
         
       </div>

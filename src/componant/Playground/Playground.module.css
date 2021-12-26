@@ -25,6 +25,7 @@
   height: 15%;
 
 
+
 }
 .cardHolders {
   width: 80%;
@@ -34,5 +35,4 @@
   justify-content: space-between;
   right: 10%;
   height: 100%;
-  padding: 0%;
 }
