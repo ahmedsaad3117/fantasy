@@ -16,7 +16,7 @@ const Playground = () => {
             playersInfo.slice(0, 11).map((val, key) => {
               return (
                 <Draggable
-                  bounds
+                bounds="parent"
                   key={key}
                   defaultPosition={{ x: 18, y: 30 }}
                 >
