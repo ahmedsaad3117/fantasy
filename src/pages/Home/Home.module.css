@@ -103,7 +103,7 @@
 
 .hiddenSideBar {
   position: absolute;
-  width: 100%;
+  width: 95%;
   z-index: 99;
   background-color: #fff;
 }
