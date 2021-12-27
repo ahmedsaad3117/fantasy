@@ -62,8 +62,7 @@ const Home = () => {
               <div className={styles.movingAlert}>
                 <span>
                   {" "}
-                  <BsFillInfoCircleFill /> قم بسحب وإسقاط اللاعبين لتغيير
-                  مواقعهم{" "}
+                  <BsFillInfoCircleFill /> قم باختيار اللاعبين ثم قم بتحريكهم
                 </span>
               </div>
               <div dir="ltr" className={styles.ourSocial}>

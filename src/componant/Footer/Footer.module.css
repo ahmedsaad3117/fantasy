@@ -1,7 +1,15 @@
 .footerComp{
     padding: .5rem;
-    background-color: #155674 ;
-    color:white;
+    background-color: #F5EDE3 ;
+    color:#000;
     bottom: 0;
+    font-weight:bolder;
+    text-align: center;
 
+}
+.logoImgStyling{
+    width: 80px;
+}
+.footerTxt{
+font-size: 22px;
 }

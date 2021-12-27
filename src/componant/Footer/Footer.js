@@ -1,9 +1,11 @@
 import styles from './Footer.module.css'
+import logoImg from '../../assets/images/HalfMillionLogo.png'
+
 const Footer = () => {
   return (
     <>
       <footer className={styles.footerComp}>
-        <h5 className="text-center">© 2021 M &#189; </h5>
+        <div className={styles.footerTxt}>© 2021<img className={styles.logoImgStyling} src={logoImg}/> </div>
       </footer>
     </>
   );

@@ -1,11 +1,14 @@
 .navbarClass{
-    background-color: #155674 ;
+    background-color: #F5EDE3 ;
 }
 .navFonts{
-    color: blanchedalmond;
+    color: black;
 
 }
 .navHeader{
     font-size: 100%;
     font-weight:700;
+}
+.logoImgStyling{
+    width: 100px;
 }

@@ -48,7 +48,6 @@ const Sidebar = () => {
           <tbody className={styles.tableSidebar}>
             {playersInfo &&
               playersInfo.map((info, key) => {
-                console.log(key)
                 return (
                   <tr>
                     <td>{info.number}</td>
