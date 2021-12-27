@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <footer className={styles.footerComp}>
-        <div className={styles.footerTxt}>© 2021<img className={styles.logoImgStyling} src={logoImg}/> </div>
+        <div className={styles.footerTxt}>© 2021<img alt='logo' className={styles.logoImgStyling} src={logoImg}/> </div>
       </footer>
     </>
   );

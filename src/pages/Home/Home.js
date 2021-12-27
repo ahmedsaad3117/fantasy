@@ -9,7 +9,6 @@ import { ShareSocial } from "react-share-social";
 import {
   BsInstagram,
   BsTwitter,
-  BsLinkedin,
   BsFillInfoCircleFill,
 } from "react-icons/bs";
 
@@ -28,14 +27,14 @@ const Home = () => {
     quality: 1.0,
   });
 
-  const download = (image, { name = "img", extension = "jpg" } = {}) => {
-    const a = document.createElement("a");
-    a.href = image;
-    a.download = createFileName(extension, name);
-    a.click();
-  };
+  // const download = (image, { name = "img", extension = "jpg" } = {}) => {
+  //   const a = document.createElement("a");
+  //   a.href = image;
+  //   a.download = createFileName(extension, name);
+  //   a.click();
+  // };
 
-  const downloadScreenshot = () => takeScreenShot(ref.current).then(download);
+  //const downloadScreenshot = () => takeScreenShot(ref.current).then(download);
 
   const matceName = useSelector((state) => state.matcheName);
   const isShowHandler = () => {

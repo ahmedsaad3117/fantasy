@@ -14,7 +14,7 @@ const NavbarComp = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Navbar.Brand href="https://halfm.sa/"> <img className={styles.logoImgStyling} src={logoImg}/> </Navbar.Brand>
+              <Navbar.Brand href="https://halfm.sa/"> <img alt='logo' className={styles.logoImgStyling} src={logoImg}/> </Navbar.Brand>
             </Nav>
           </Navbar.Collapse>
         </Container>
