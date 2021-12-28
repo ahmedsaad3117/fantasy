@@ -74,20 +74,17 @@ const Home = () => {
                     <img className={styles.sochialIcons} src={insticon} alt="fb Icon"/>
 
                   </a>
-                    <span className={styles.spanIconNamr}> halfmillion_sa</span>
                 </div>
                 <div className={styles.divContiner}>
                   <a href="https://twitter.com/halfmillion_sa">
                   <img className={styles.sochialIcons} src={twticon} alt="twitter Icon"/> 
 
                   </a>
-                  <span className={styles.spanIconNamr}> halfmillion_sa</span>
                 </div>
                 <div className={styles.divContiner}>
                   <a href="https://www.tiktok.com/@halfmillion_sa">
                   <img className={styles.sochialIcons} src={tikicon} alt="tiktok Icon"/>
                   </a>
-                  <span className={styles.spanIconNamr}> halfmillion</span>
 
                 </div>
               </div>
