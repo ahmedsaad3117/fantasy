@@ -1,6 +1,9 @@
 import styles from "./Home.module.css";
 import Playground from "../../componant/Playground/Playground";
 import Sidebar from "../../componant/Sidebar/Sidebar";
+import insticon from "../../assets/images/insticon.png";
+import twticon from "../../assets/images/twticon.png";
+import tikicon from "../../assets/images/tikicon.png";
 
 import { useSelector } from "react-redux";
 import { useScreenshot, createFileName } from "use-react-screenshot";
@@ -47,7 +50,8 @@ const Home = () => {
           <div className={styles.playgroundContinerHome} ref={ref}>
             <div className={styles.matchTitle}>
               <h3> {matceName.name} </h3>
-              <h6> 24 ديسمبر </h6>
+              <h6>  24 ديسمبر  </h6>
+              <span>15:00</span>
             </div>
 
             <Playground />
@@ -67,21 +71,24 @@ const Home = () => {
               <div dir="ltr" className={styles.ourSocial}>
                 <div className={styles.divContiner}>
                   <a href="https://www.instagram.com/halfmillion_sa">
-                    <BsInstagram className={styles.iconSochiel} />
+                    <img className={styles.sochialIcons} src={insticon} alt="fb Icon"/>
+
                   </a>
-                  <span className={styles.spanIconNamr}> /halfmillion_sa</span>
+                    <span className={styles.spanIconNamr}> halfmillion_sa</span>
                 </div>
                 <div className={styles.divContiner}>
                   <a href="https://twitter.com/halfmillion_sa">
-                    <BsTwitter className={styles.iconSochiel} />
+                  <img className={styles.sochialIcons} src={twticon} alt="twitter Icon"/> 
+
                   </a>
-                  <span className={styles.spanIconNamr}> /halfmillion_sa</span>
+                  <span className={styles.spanIconNamr}> halfmillion_sa</span>
                 </div>
                 <div className={styles.divContiner}>
                   <a href="https://www.tiktok.com/@halfmillion_sa">
-                    <FaTiktok className={styles.iconSochiel} />
+                  <img className={styles.sochialIcons} src={tikicon} alt="tiktok Icon"/>
                   </a>
-                  <span className={styles.spanIconNamr}> /halfmillion</span>
+                  <span className={styles.spanIconNamr}> halfmillion</span>
+
                 </div>
               </div>
             </div>
@@ -90,7 +97,7 @@ const Home = () => {
           <div dir="ltr" className={styles.buttonsContainer}>
             <div className={styles.socialShare}>
               <ShareSocial
-                url="https://fantasysu.herokuapp.com"
+                url="https://fantasysu.com"
                 socialTypes={["facebook", "twitter", "reddit", "linkedin"]}
               />
             </div>
