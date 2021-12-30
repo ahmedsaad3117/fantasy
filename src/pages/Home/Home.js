@@ -20,6 +20,10 @@ import { FaTiktok } from "react-icons/fa";
 import { useMediaQuery } from "react-responsive";
 
 const Home = () => {
+  const [isCopyed , setIsCopyed]  = useState(false)
+
+  const copyText = document.getElementById("myInput");
+
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   const [isShow, setIsShow] = useState(true);
@@ -43,6 +47,15 @@ const Home = () => {
   const isShowHandler = () => {
     setIsShow(!isShow);
   };
+
+
+  const isCopyedHanderl = () =>{
+    setIsCopyed(true);
+    isCopyedHanderl2();
+  }
+  const isCopyedHanderl2 = () =>{
+    navigator.clipboard.writeText("https://fantasysu.com") 
+   }
   return (
     <>
       <div className={styles.bigContainer}>
@@ -93,10 +106,11 @@ const Home = () => {
 
           <div dir="ltr" className={styles.buttonsContainer}>
             <div className={styles.socialShare}>
-              <ShareSocial
-                url="https://fantasysu.com"
-                socialTypes={["facebook", "twitter", "reddit", "linkedin"]}
-              />
+              <div  className={styles.inputShareLinkDiv}>
+                <input className={styles.inputShareLink} id="myInput" type="text" value="https://fantasysu.com"/> 
+                <button className={styles.inputShareBtn} onClick={isCopyedHanderl}>{isCopyed?"Copied":"Copy"}</button>
+              </div>
+           
             </div>
           </div>
         </div>

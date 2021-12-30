@@ -16,10 +16,10 @@
 .playerCardPlayGround {
   display: flex;
   position: static;
-  margin: 3% 5%;
+  margin: 3% 6.5%;
   z-index: 15;
-  width: 13%;
-  height: 15%;
+  width: 10%;
+  height: 11%;
 }
 .cardHolders {
   width: 95%;
@@ -27,6 +27,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  right: 4%;
+  right: 5%;
   height: 100%;
 }

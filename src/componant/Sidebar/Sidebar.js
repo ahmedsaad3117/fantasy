@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Table } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { ADD_PLAYER_FIELD, REMOVE_PLAYER_FIELD } from "../../store/store";
+import { playerActions } from "../../store/store";
 
 import styles from "./Sidebar.module.css";
 
@@ -18,12 +19,12 @@ const Sidebar = () => {
     const isCheaked = e.target.checked;
     if (isCheaked) {
       setNumberCheakedBox(++numberCheakedBox);
-      dispatch({ type: ADD_PLAYER_FIELD, value: playerNumber });
+      dispatch(playerActions.addPlayerField(playerNumber));
     }
     if (!isCheaked) {
       setNumberCheakedBox(--numberCheakedBox);
 
-      dispatch({ type: REMOVE_PLAYER_FIELD, value: playerNumber });
+      dispatch(playerActions.removePlayerField(playerNumber));
     }
     if (numberCheakedBox >= 11) {
       setIsComlateTeam(true);

@@ -1,4 +1,4 @@
-import { createStore } from "redux";
+import { createSlice, configureStore } from "@reduxjs/toolkit";
 
 
 export const ADD_PLAYER_FIELD = "getAllSelctedPlayer";
@@ -7,48 +7,35 @@ export const REMOVE_PLAYER_FIELD = "removePlayerField";
 const intinalState = require("../assets/files/playernames.json");
 const matchNameFile = require("../assets/files/matachname.json");
 
-const playerReducer = (
-  state = { data: intinalState.data, selctedPlayer: [], matcheName: matchNameFile },
-  action
-) => {
-  const player = action.value;
-  if (action.type === ADD_PLAYER_FIELD) {
-    return {
-      data: intinalState.data,
-      matcheName: matchNameFile,
-      selctedPlayer: [
+const initialState = {
+  data: intinalState.data,
+  selctedPlayer: [],
+  matcheName: matchNameFile,
+};
+const playerSlice = createSlice({
+  name: "players",
+  initialState,
+  reducers: {
+    addPlayerField(state, action) {
+      const player = action.payload;
+      state.selctedPlayer = [
         ...state.selctedPlayer,
         intinalState.data.find((x) => x.number === player),
-      ],
-    };
-  }
-  if (action.type === REMOVE_PLAYER_FIELD) {
-    return {
-      data: intinalState.data,
-      matcheName: matchNameFile,
-      selctedPlayer: [
+      ];
+    },
+    removePlayerField(state, action) {
+      const player = action.payload;
+      state.selctedPlayer = [
         ...state.selctedPlayer.filter((x) => x.number !== player),
-      ],
-    };
-  }
-  if (action.type === "removePlayer") {
-    // let deltedData = [...intinalState.filter(x=>x.number === player )]
-    // delete intinalState[1];
-    // console.log(intinalState[1])
+      ];
+    },
 
-    console.log("insde it")
-     
-    return {
-      data: [...intinalState.data.filter((x) => x.number !== player)],
-      matcheName: matchNameFile,
-      selctedPlayer: [
-        ...state.selctedPlayer.filter((x) => x.number !== player),
-      ],
-    };
-  }
-  return state;
-};
+  },
+});
 
-const store = createStore(playerReducer);
+const store = configureStore({
+  reducer: playerSlice.reducer,
+});
 
+export const playerActions = playerSlice.actions;
 export default store;
