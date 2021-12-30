@@ -63,8 +63,8 @@ const Home = () => {
           <div className={styles.playgroundContinerHome} ref={ref}>
             <div className={styles.matchTitle}>
               <h3> {matceName.name} </h3>
-              <h6>  24 ديسمبر  </h6>
-              <span>15:00</span>
+              <h6>  1 يناير  </h6>
+              <span>18:50</span>
             </div>
 
             <Playground />
