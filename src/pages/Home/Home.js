@@ -64,7 +64,7 @@ const Home = () => {
             <div className={styles.matchTitle}>
               <h3> {matceName.name} </h3>
               <h6>  1 يناير  </h6>
-              <span>18:50</span>
+              <span>19:50</span>
             </div>
 
             <Playground />
@@ -107,8 +107,8 @@ const Home = () => {
           <div dir="ltr" className={styles.buttonsContainer}>
             <div className={styles.socialShare}>
               <div  className={styles.inputShareLinkDiv}>
-                <input className={styles.inputShareLink} id="myInput" type="text" value="https://fantasysu.com"/> 
-                <button className={styles.inputShareBtn} onClick={isCopyedHanderl}>{isCopyed?"Copied":"Copy"}</button>
+                {/* <input className={styles.inputShareLink} id="myInput" type="text" value="https://fantasysu.com"/> 
+                <button className={styles.inputShareBtn} onClick={isCopyedHanderl}>{isCopyed?"Copied":"Copy"}</button> */}
               </div>
            
             </div>

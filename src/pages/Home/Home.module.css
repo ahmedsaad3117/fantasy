@@ -1,5 +1,4 @@
-* {
-}
+
 .bigContainer {
   display: flex;
   flex-direction: row-reverse;
@@ -87,10 +86,9 @@
   align-items: center;
   width: 80%;
   margin: auto;
-  height: 100px;
-  background-color: #f5ede3;
+  height: 120px;
   border-radius: 10px;
-  background: url(./../../assets/images/HalfMillionLogo.png) #f5ede3 no-repeat  center;
+  background: url(./../../assets/images/HalfMillionLogo.png)  no-repeat  center;
 
 }
 .inputShareLinkDiv {
