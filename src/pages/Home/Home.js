@@ -62,7 +62,7 @@ const Home = () => {
         <div className={styles.playgroundPlayers}>
           <div className={styles.playgroundContinerHome} ref={ref}>
             <div className={styles.matchTitle}>
-              <h3> {matceName.name} </h3>
+              <h4> {matceName.name} </h4>
               <h6>  1 يناير  </h6>
               <span>19:50</span>
             </div>

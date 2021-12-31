@@ -67,6 +67,7 @@
   color: #fff;
   background: url(./../../assets/images/playground1.jpg) #000 no-repeat bottom;
   font-family: "Frutiger LT Arabic", sans-serif;
+  font-size: 100%;
 }
 .mainBanner {
   width: 90%;
