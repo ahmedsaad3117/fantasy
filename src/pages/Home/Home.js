@@ -104,15 +104,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div dir="ltr" className={styles.buttonsContainer}>
-            <div className={styles.socialShare}>
-              <div  className={styles.inputShareLinkDiv}>
-                {/* <input className={styles.inputShareLink} id="myInput" type="text" value="https://fantasysu.com"/> 
-                <button className={styles.inputShareBtn} onClick={isCopyedHanderl}>{isCopyed?"Copied":"Copy"}</button> */}
-              </div>
-           
-            </div>
-          </div>
+
         </div>
         
           <div hidden={isTabletOrMobile} className={styles.sidebarStyle}>
