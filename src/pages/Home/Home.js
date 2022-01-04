@@ -63,8 +63,12 @@ const Home = () => {
           <div className={styles.playgroundContinerHome} ref={ref}>
             <div className={styles.matchTitle}>
               <h4> {matceName.name} </h4>
-              <h6>  1 يناير  </h6>
-              <span>19:50</span>
+             <div className={styles.numberGaolDiv}>
+               <input placeholder="-"  className={styles.numberGaol}  type="number" min='0' max="8" />
+               <input placeholder="-"  className={styles.numberGaol}  type="number" min='0' max="8" />
+             </div>
+              <h6 className={styles.matchDate}>8 يناير</h6>
+              <span>18:00</span>
             </div>
 
             <Playground />

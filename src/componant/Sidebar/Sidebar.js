@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Table } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { ADD_PLAYER_FIELD, REMOVE_PLAYER_FIELD } from "../../store/store";
-import { playerActions } from "../../store/store";
+import { playerActions } from "../../store/slices/playerSlice";
 
 import styles from "./Sidebar.module.css";
 
