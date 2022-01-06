@@ -1,7 +1,6 @@
 .player {
   width: 100%;
   height: 100%;
-
 }
 .playercard {
   z-index: 15;
@@ -11,14 +10,15 @@
 
 }
 .playercard span {
-  font-size: 80%;
-  margin: auto;
+  font-size: 65%;
+  margin: 0 -35px;
   background-color: #a91a1a00;
-  text-overflow: ellipsis;
   clear: both;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 145%;
+ 
+  border: black solid 3px;
 }
