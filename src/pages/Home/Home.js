@@ -64,8 +64,28 @@ const Home = () => {
             <div className={styles.matchTitle}>
               <h4> {matceName.name} </h4>
              <div className={styles.numberGaolDiv}>
-               <input placeholder="-"  className={styles.numberGaol}  type="number" min='0' max="8" />
-               <input placeholder="-"  className={styles.numberGaol}  type="number" min='0' max="8" />
+               {/* <input placeholder="-"  className={styles.numberGaol}  type="number" min='0' max="8" /> */}
+                <select className={styles.numberGaol} id="cars" name="cars">
+                  <option className={styles.optionStyling} >0</option>
+                  <option className={styles.optionStyling}>1</option>
+                  <option className={styles.optionStyling} >2</option>
+                  <option className={styles.optionStyling}>3</option>
+                  <option className={styles.optionStyling}>4</option>
+                  <option className={styles.optionStyling} >5</option>
+                  <option className={styles.optionStyling}>6</option>
+                </select>
+                <select className={styles.numberGaol} id="cars" name="cars">
+                  <option className={styles.optionStyling} >0</option>
+                  <option className={styles.optionStyling}>1</option>
+                  <option className={styles.optionStyling} >2</option>
+                  <option className={styles.optionStyling}>3</option>
+                  <option className={styles.optionStyling}>4</option>
+                  <option className={styles.optionStyling} >5</option>
+                  <option className={styles.optionStyling}>6</option>
+                </select>
+         
+              
+               {/* <input placeholder="-"  className={styles.numberGaol}  type="number" min='0' max="8" /> */}
              </div>
               <h6 className={styles.matchDate}>8 يناير</h6>
               <span>18:00</span>
