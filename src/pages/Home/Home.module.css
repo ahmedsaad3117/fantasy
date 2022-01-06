@@ -87,18 +87,15 @@
   width: 40px;
   height: 40px;
   appearance: none;
-
 }
-.optionStyling{
+.optionStyling {
   background-color: #285125;
   font-size: medium;
   border: 1px white;
 }
 .numberGaol select {
   appearance: none;
-
-} 
-
+}
 
 .numberGaolDiv select::-ms-expand {
   display: none;
