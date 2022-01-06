@@ -16,7 +16,7 @@
 .playerCardPlayGround {
   display: flex;
   position: static;
-  margin: 3% 6.5%;
+  margin: 6% 6.5%;
   z-index: 15;
   width: 10%;
   height: 11%;
@@ -27,8 +27,8 @@
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: center;
-  right: 3%;
+  right: 5%;
   height: 100%;
-  align-items: center;
-  top: -5%;
+  align-content:center;
+  top: -6%;
 }
