@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Table } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { playerActions } from "../../store/slices/playerSlice";
+import { playersFieldAction , matchNameFieldAction } from "../../store/slices/playerAction";
 
 import styles from "./Sidebar.module.css";
 
@@ -12,6 +13,11 @@ const Sidebar = () => {
   let [numberCheakedBox, setNumberCheakedBox] = useState(0);
   const playersInfo = useSelector((state) => state.data);
   const playersSelcted = useSelector((state) => state.selctedPlayer);
+
+  useEffect(()=>{
+    dispatch(playersFieldAction())
+    dispatch(matchNameFieldAction())
+  },[dispatch])
 
 
   const addPlayerToFieldHandeler = (e, playerNumber) => {

@@ -7,7 +7,7 @@ const MainRoutes = () => {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/admin" element={<AdminPanel />} />
+        <Route exact path="/admin992760655321" element={<AdminPanel />} />
       </Routes>
     </>
   );

@@ -43,7 +43,8 @@ const Home = () => {
 
   //const downloadScreenshot = () => takeScreenShot(ref.current).then(download);
 
-  const matceName = useSelector((state) => state.matcheName);
+  const matceInfo = useSelector((state) => state.matcheNameInfo);
+
   const isShowHandler = () => {
     setIsShow(!isShow);
   };
@@ -62,7 +63,7 @@ const Home = () => {
         <div className={styles.playgroundPlayers}>
           <div className={styles.playgroundContinerHome} ref={ref}>
             <div className={styles.matchTitle}>
-              <h4> {matceName.name} </h4>
+              <h4> {matceInfo.name} </h4>
              <div className={styles.numberGaolDiv}>
                {/* <input placeholder="-"  className={styles.numberGaol}  type="number" min='0' max="8" /> */}
                 <select className={styles.numberGaol} id="cars" name="cars">
@@ -87,8 +88,8 @@ const Home = () => {
               
                {/* <input placeholder="-"  className={styles.numberGaol}  type="number" min='0' max="8" /> */}
              </div>
-              <h6 className={styles.matchDate}>8 يناير</h6>
-              <span>18:00</span>
+              <h6 className={styles.matchDate}>{matceInfo.date}</h6>
+              <span>{matceInfo.time}</span>
             </div>
 
             <Playground />

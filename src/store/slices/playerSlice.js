@@ -1,24 +1,27 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
-
-const intinalState = require("../../assets/files/playernames.json");
-const matchNameFile = require("../../assets/files/matachname.json");
-
 const initialState = {
-  data: intinalState.data,
+  data: [],
   selctedPlayer: [],
-  matcheName: matchNameFile,
+  matcheNameInfo: { name: "", date: "", time: "" },
 };
 const playerSlice = createSlice({
   name: "players",
   initialState,
   reducers: {
+    fetchingData(state, action) {
+      state.data = action.payload;
+    },
+
+    fetchingMatchName(state, action) {
+      state.matcheNameInfo = action.payload;
+    },
+
     addPlayerField(state, action) {
       const player = action.payload;
       state.selctedPlayer = [
         ...state.selctedPlayer,
-        intinalState.data.find((x) => x.number === player),
+        state.data.find((x) => x.number === player),
       ];
     },
     removePlayerField(state, action) {
@@ -27,9 +30,8 @@ const playerSlice = createSlice({
         ...state.selctedPlayer.filter((x) => x.number !== player),
       ];
     },
-
   },
 });
 
 export const playerActions = playerSlice.actions;
-export default playerSlice.reducer
+export default playerSlice.reducer;
